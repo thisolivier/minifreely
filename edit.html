@@ -2,204 +2,69 @@
 <HTML>
   <HEAD>
     <title>A title</title>
-    <style>
-      body {
-        font-size: 15px;
-        font-family: sans-serif;
-      }
-       .icons {
-         margin-top: 40vh; /* This means a margin above the current element of 20% the height of viewport. VH gets you a percent of the height, VW a percent of the width. */
-         /* and this is how you do comments in CSS */
-         align-items:center;
-      }
-
-
-       /* This means, apply styles to all list items within icon classes */
-      .icons li {
-        display: inline-block; /* Means they'll run right to left like words, but we can give them a set height and width */
-        list-style: none;
-        vertical-align: top; /* If the title's are different legths, they might be different heights- to keep the icons aligned, I align them not to the bottom of the line, but the top */
-        text-align: center;
-        margin-right: 1em;
-        border: 1px red dashed;
-
-      }
-
-      /* All images within list items within icons classes */
-      .icons li img {
-        width: 6em; /* Write your sizes in EMs not pixels PX. It makes it easy to resize things. I set the size on 1 em to 15 px just ealier, but size things by eye/ with some triganometry */
-        height: 6em;
-        padding: 0em; /* Watch out - padding goes inside the element, so it uses up width. Set your width wide enough for your content and padding */
-        border: 1px green dashed;
-      }
-      .icons li h1 {
-        font-size: 1em;
-      }
-      .wrapper {
-        width : 20%;
-        border: 1px blue dashed;
-        text-align: right;
-      }
-      .expanded li {
-        display: inline-block; /* Means they'll run right to left like words, but we can give them a set height and width */
-        list-style: none;
-        vertical-align: top; /* If the title's are different legths, they might be different heights- to keep the icons aligned, I align them not to the bottom of the line, but the top */
-        text-align: center;
-        margin-right: 0.5em;
-        margin-bottom: 1em
-        border: 1px yellow dashed;
-      }
-      .expanded li img {
-        width: 16em; /* Write your sizes in EMs not pixels PX. It makes it easy to resize things. I set the size on 1 em to 15 px just ealier, but size things by eye/ with some triganometry */
-        height: 18em;
-        padding: 0em; /* Watch out - padding goes inside the element, so it uses up width. Set your width wide enough for your content and padding */
-        border: 1px green dashed;
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
   </HEAD>
 
   <BODY>
     <!-- I've defined this as a list, better for accessibility. UL means unordered list, LI means a list item. -->
-    <!-- and this is how you do HTML comments -->
     <ul class="icons">
       <li class="link-name">
-        <img src="BEME1icon.jpg" alt="BE ME">
+        <img src="images_web/BEME1icon.jpg" alt="BE better with your alt text">
       </li>
 
       <li class="link name">
-        <img src="BEME2icon.jpg" alt="BE ME pt2">
+        <img src="images_web/BEME2icon.jpg" alt="BE ME pt2">
       </li>
 
         <li class="link-name">
-          <img src="FEEL1icon.jpg" alt="FEEL pt1">
+          <img src="images_web/FEEL1icon.jpg" alt="FEEL pt1">
         </li>
 
         <li class="link-name">
-          <img src="FEEL2icon.jpg" alt="FEEl pt2">
+          <img src="images_web/FEEL2icon.jpg" alt="FEEl pt2">
         </li>
 
         <li class="link-name">
-          <img src="STOPicon.jpg" alt="STOP">
+          <img src="images_web/STOPicon.jpg" alt="STOP">
         </li>
 
         <li class="link-name">
-          <img src="GOicon.jpg" alt="GO">
+          <img src="images_web/GOicon.jpg" alt="GO">
         </li>
 
         <li class="link-name">
-          <img src="THEIDOicon.jpg" alt="the(I)DO">
+          <img src="images_web/THEIDOicon.jpg" alt="the(I)DO">
         </li>
 
         <li class="link-name">
-          <img src="ITTSicon.jpg" alt="ITTS">
+          <img src="images_web/ITTSicon.jpg" alt="ITTS">
         </li>
 
         <li class="link-name">
-          <img src="SPEAKicon.jpg" alt="SPEAK">
+          <img src="images_web/SPEAKicon.jpg" alt="SPEAK">
         </li>
 
         <li class="link-name">
-          <img src="LIFEicon.jpg" alt="LIFE">
+          <img src="images_web/LIFEicon.jpg" alt="LIFE">
         </li>
 
         <li class="link-name">
-          <img src="LIVINGicon.jpg" alt="LIVING">
+          <img src="images_web/LIVINGicon.jpg" alt="LIVING">
         </li>
     </ul>
 
-    <section class="wrapper">
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
-    <BR>
+    <div class="divider">
+      Imaginary line....
+    </div>
+
+    <section class="selected">
+        <img class="big-img" src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
+        <nav>
+          <a href="">Download to Print</a><a href="">View Online</a>
+        </nav>
     </section>
 
-    <div class="selected">
-      <ul class="expanded">
-
-      <li class="wrapper">
-      <img src="LIVING.png">
-    <nav>
-      <a href="">View Online</a>
-      <a href="">Download to Print</a>
-      <br>
-      </nav>
-       </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-      <li class="wrapper">
-      <img src="http://www.clipartbest.com/cliparts/9cR/bax/9cRbaxy9i.jpg">
-      <a href="">Download to Print</a>
-      <a href="">View Online</a>
-      <br>  </li>
-
-</ul>
-        <nav>
-          <a href="">Download to Print</a>
-          <a href="">View Online</a>
-          <br>
-        </nav>
-    </div>
   </BODY>
 </HTML>
